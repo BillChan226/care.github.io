@@ -1,0 +1,90 @@
+:root {
+    --primary-purple: #6B46C1;
+    --primary-purple-dark: #553C9A;
+    --primary-purple-light: #9F7AEA;
+    --neutral-50: #F7FAFC;
+    --neutral-100: #EDF2F7;
+    --neutral-800: #1A202C;
+    --text-primary: #2D3748;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-primary);
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-wrap {
+    position: fixed;
+    width: 100%;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.container-large {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.navigation-logo {
+    height: 40px;
+    width: auto;
+}
+
+.navigation-link {
+    color: var(--text-primary);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.navigation-link:hover {
+    color: var(--primary-purple);
+}
+
+.section-hero {
+    padding: 8rem 0 4rem;
+    background: linear-gradient(135deg, var(--neutral-50) 0%, #F3E8FF 100%);
+}
+
+.heading-style-h1 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: var(--neutral-800);
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.button.primary {
+    background: var(--primary-purple);
+    color: white;
+}
+
+.button.primary:hover {
+    background: var(--primary-purple-dark);
+}
+
+.button.secondary {
+    background: white;
+    color: var(--primary-purple);
+    border: 2px solid var(--primary-purple);
+}
+
+.button.secondary:hover {
+    background: var(--neutral-50);
+} 
